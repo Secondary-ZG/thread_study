@@ -1,5 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
+ out/
 .idea/misc.xml
 .idea/modules.xml
 .idea/thread_study.iml
 .idea/workspace.xml
+
