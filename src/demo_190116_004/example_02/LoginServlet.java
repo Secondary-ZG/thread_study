@@ -1,10 +1,10 @@
-package demo_190116_004.example_01;
+package demo_190116_004.example_02;
 
 /**
  * Java Class
  * Created By Secondary
  * On 2019/1/16 5:01 PM
- * Description: 模拟servlet组件(非线程安全)
+ * Description: 模拟servlet组件(线程安全)
  */
 public class LoginServlet {
 
@@ -12,7 +12,7 @@ public class LoginServlet {
 
     private static String passwordRef;
 
-    public static void doPost(String userName, String password) {
+    synchronized public static void doPost(String userName, String password) {
         try{
             userNameRef = userName;
             if (userName.equals("a")) {
