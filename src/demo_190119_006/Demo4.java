@@ -6,7 +6,7 @@ package demo_190119_006;
  * On 2019/1/19 1:33 PM
  * Description: isAlive()方法
  */
-public class Demo_4 extends Thread {
+public class Demo4 extends Thread {
 
     @Override
     public void run() {
@@ -25,7 +25,7 @@ public class Demo_4 extends Thread {
 //        注：
 //          System.out.println("end  = " + this.isAlive());
 //          虽然代码打印的值是true，但此职是不确定的。打印true是因为demo_4线程还没有执行完毕，所以输出true
-        Demo_4 demo_4 = new Demo_4();
+        Demo4 demo_4 = new Demo4();
         System.out.println("begin = " + demo_4.isAlive());
         demo_4.start();
         System.out.println("end = " + demo_4.isAlive());
@@ -33,7 +33,7 @@ public class Demo_4 extends Thread {
 //        System.out.println("分----------割------------线");
 
 //        此段代码中的运行结果为false，因为demo_4对象已经在1秒之内执行完毕了
-//        Demo_4 demo_41 = new Demo_4();
+//        Demo4 demo_41 = new Demo4();
 //        System.out.println("begin = " + demo_41.isAlive());
 //        demo_41.start();
 //        Thread.sleep(1000);

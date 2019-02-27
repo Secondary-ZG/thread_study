@@ -6,7 +6,7 @@ package demo_181230_001;
  * On 2018/12/30 4:22 PM
  * Description: 继承Thread类(线程调用的随机性)
  */
-public class Demo_2 extends Thread {
+public class Demo2 extends Thread {
 
     /**
      * 1、在Java的JDK开发包中，已经自带了对多线程技术的支持，可以很方便的进行多线程编程.
@@ -20,7 +20,7 @@ public class Demo_2 extends Thread {
     @Override
     public void run(){
         super.run();
-        System.out.println("Demo_2");
+        System.out.println("Demo2");
     }
 
     /**
@@ -32,7 +32,7 @@ public class Demo_2 extends Thread {
      * @param args
      */
     public static void main(String[] args) {
-        Demo_2 demo_2 = new Demo_2();
+        Demo2 demo_2 = new Demo2();
         demo_2.start();
         System.out.println("运行结束!");
     }

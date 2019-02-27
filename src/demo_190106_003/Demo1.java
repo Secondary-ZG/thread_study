@@ -8,11 +8,11 @@ package demo_190106_003;
  * 自定义线程类中的实例变量针对其他线程可以有共享与不共享之分，
  * 这在多个线程之间进行交互是很重要的技术点不共享数据的情况
  */
-public class Demo_1 extends Thread {
+public class Demo1 extends Thread {
 
     private int count = 5;
 
-    public Demo_1(String name) {
+    public Demo1(String name) {
         super();
         this.setName(name);//设置线程名称
     }
@@ -34,9 +34,9 @@ public class Demo_1 extends Thread {
      * @param args
      */
     public static void main(String[] args) {
-        Demo_1 a = new Demo_1("A");
-        Demo_1 b = new Demo_1("B");
-        Demo_1 c = new Demo_1("C");
+        Demo1 a = new Demo1("A");
+        Demo1 b = new Demo1("B");
+        Demo1 c = new Demo1("C");
         a.start();
         b.start();
         c.start();

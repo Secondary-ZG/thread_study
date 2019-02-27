@@ -6,7 +6,7 @@ package demo_190117_005;
  * On 2019/1/17 1:42 PM
  * Description: currentThread()方法
  */
-public class Demo_2 extends Thread {
+public class Demo2 extends Thread {
 
     /**
      * main方法被名为main的线程调用

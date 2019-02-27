@@ -6,9 +6,9 @@ package demo_190119_006;
  * On 2019/1/19 1:04 PM
  * Description: start()方法启动获取currentThread名称
  */
-public class Demo_1 extends Thread {
+public class Demo1 extends Thread {
 
-    public Demo_1() {
+    public Demo1() {
         System.out.println("构造方法的打印：" + Thread.currentThread().getName());
     }
 
@@ -18,7 +18,7 @@ public class Demo_1 extends Thread {
     }
 
     public static void main(String[] args) {
-        Demo_1 demo_1 = new Demo_1();
+        Demo1 demo_1 = new Demo1();
         demo_1.start();
     }
 

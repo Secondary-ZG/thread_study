@@ -6,7 +6,7 @@ package demo_190102_002;
  * On 2019/1/2 9:16 AM
  * Description: 线程的随机性
  */
-public class Demo_1 extends Thread{
+public class Demo1 extends Thread{
 
     /**
      * 1、Thread.java中的start()方法通知"线程规划器"此线程已经准备就绪，
@@ -33,8 +33,8 @@ public class Demo_1 extends Thread{
 
     public static void main(String[] args) {
         try {
-            Demo_1 demo_1 = new Demo_1();
-            demo_1.setName("Demo_1");
+            Demo1 demo_1 = new Demo1();
+            demo_1.setName("Demo1");
             demo_1.start();
             for (int i=0; i<10; i++) {
                 int time = (int) (Math.random() * 1000);

@@ -8,7 +8,7 @@ package demo_190102_002;
  * 1、如果欲创建的线程类已经有一个父类了，这时就不能再继承自Thread类了
  * 因为Java不支持多继承，所以就需要实现Runnable接口应对这样的情况
  */
-public class Demo_3 implements Runnable{
+public class Demo3 implements Runnable{
 
     @Override
     public void run() {
@@ -24,7 +24,7 @@ public class Demo_3 implements Runnable{
      * @param args
      */
     public static void main(String[] args) {
-        Runnable runnable = new Demo_3();
+        Runnable runnable = new Demo3();
         Thread thread = new Thread(runnable);
         thread.start();
         System.out.println("运行结束！");

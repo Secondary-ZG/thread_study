@@ -6,7 +6,7 @@ package demo_190117_005;
  * On 2019/1/17 1:16 PM
  * Description: System.out.println()的异常
  */
-public class Demo_1 extends Thread {
+public class Demo1 extends Thread {
 
     private int i= 5;
 
@@ -29,7 +29,7 @@ public class Demo_1 extends Thread {
      */
     public static void main(String[] args) {
 
-        Demo_1 demo_1 = new Demo_1();
+        Demo1 demo_1 = new Demo1();
 
         Thread thread1 = new Thread(demo_1);
         Thread thread2 = new Thread(demo_1);

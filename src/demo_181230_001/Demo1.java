@@ -6,7 +6,7 @@ package demo_181230_001;
  * On 2018/12/30 4:17 PM
  * Description: 使用多线程
  */
-public class Demo_1 {
+public class Demo1 {
 
     /**
      * 1、在控制台中输出的main其实就是一个名称叫做main的线程在执行mian()方法中的代码

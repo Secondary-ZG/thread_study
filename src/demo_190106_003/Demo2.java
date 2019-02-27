@@ -7,7 +7,7 @@ package demo_190106_003;
  * Description: 实例变量与线程安全
  * 共享数据的情况
  */
-public class Demo_2 extends Thread {
+public class Demo2 extends Thread {
 
     private int count = 5;
 
@@ -43,7 +43,7 @@ public class Demo_2 extends Thread {
      * @param args
      */
     public static void main(String[] args) {
-        Demo_2 demo_2 = new Demo_2();
+        Demo2 demo_2 = new Demo2();
         Thread a = new Thread(demo_2, "A");
         Thread b = new Thread(demo_2, "B");
         Thread c = new Thread(demo_2, "C");

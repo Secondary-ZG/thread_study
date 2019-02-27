@@ -6,7 +6,7 @@ package demo_190116_004;
  * On 2019/1/16 4:39 PM
  * Description: 线程同步
  */
-public class Demo_1 extends Thread {
+public class Demo1 extends Thread {
 
     private int count = 5;
 
@@ -31,7 +31,7 @@ public class Demo_1 extends Thread {
     }
 
     public static void main(String[] args) {
-        Demo_1 demo_1 = new Demo_1();
+        Demo1 demo_1 = new Demo1();
         Thread a = new Thread(demo_1, "A");
         Thread b = new Thread(demo_1, "B");
         Thread c = new Thread(demo_1, "C");

@@ -6,15 +6,15 @@ package demo_190119_006;
  * On 2019/1/19 2:06 PM
  * Description: Thread.currentThread和this的差异比较
  */
-public class Demo_5 extends Thread {
+public class Demo5 extends Thread {
 
-    public Demo_5() {
-        System.out.println("Demo_5---begin");
+    public Demo5() {
+        System.out.println("Demo5---begin");
         System.out.println("Thread.currentThread.getName() = " + Thread.currentThread().getName());
         System.out.println("Thread.currentThread.isAlive() = " + Thread.currentThread().isAlive());
         System.out.println("this.getName() = " + this.getName());
         System.out.println("this.isAlive() = " + this.isAlive());
-        System.out.println("Demo_5---end");
+        System.out.println("Demo5---end");
     }
 
     @Override
@@ -28,7 +28,7 @@ public class Demo_5 extends Thread {
     }
 
     public static void main(String[] args) {
-        Demo_5 demo_5 = new Demo_5();
+        Demo5 demo_5 = new Demo5();
         Thread thread = new Thread(demo_5);
         System.out.println("main begin thread isAlive = " + thread.isAlive());
         thread.setName("A");
