@@ -9,10 +9,12 @@ package demo190402010;
  */
 public class Demo2 extends Thread {
 
+    Integer max = 500000;
+
     @Override
     public void run() {
         super.run();
-        for (int i=0; i<50000; i++) {
+        for (int i=0; i<max; i++) {
             if (interrupted()) {
                 System.out.println("已经是停止状态了！我要退出了！");
                 break;
