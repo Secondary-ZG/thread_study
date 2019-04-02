@@ -9,6 +9,9 @@ package demo190402010;
  */
 public class Demo1 extends Thread{
 
+    /**
+     * 本示例虽然停止了线程，但是for语句下面还有语句还是会执行的.
+     */
     @Override
     public void run() {
         super.run();
@@ -17,7 +20,6 @@ public class Demo1 extends Thread{
                 System.out.println("已经是停止状态了！ 我要退出了！");
                 break;
             }
-
             System.out.println("i = " + (i + 1));
         }
     }
