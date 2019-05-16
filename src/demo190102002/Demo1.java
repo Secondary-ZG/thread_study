@@ -34,7 +34,7 @@ public class Demo1 extends Thread{
     public static void main(String[] args) {
         try {
             Demo1 demo_1 = new Demo1();
-            demo_1.setName("Demo1");
+            demo_1.setName("MyObject");
             demo_1.start();
             for (int i=0; i<10; i++) {
                 int time = (int) (Math.random() * 1000);
