@@ -6,6 +6,7 @@ package demo190518018;
  * @author Secondary
  * @date 2019-05-18 09:38
  * Description: 线程的优先级具有规则性执行类
+ * CPU尽量将执行资源让给优先级比较高的线程（也就是具有一定的规则性）
  */
 public class Run {
 
