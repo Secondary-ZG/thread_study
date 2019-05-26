@@ -11,7 +11,7 @@ public class Demo1 extends Thread {
 
     @Override
     public void run(){
-        System.out.println("Demo1 run priority = " + this.getPriority());
+        System.out.println("HasSelfPrivateNum run priority = " + this.getPriority());
         Demo2 demo2 = new Demo2();
         demo2.start();
     }

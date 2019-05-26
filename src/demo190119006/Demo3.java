@@ -9,10 +9,10 @@ package demo190119006;
 public class Demo3 extends Thread {
 
     public Demo3() {
-        System.out.println("Demo1---begin");
+        System.out.println("HasSelfPrivateNum---begin");
         System.out.println("Thread.currentThread.getName() = " + Thread.currentThread().getName());
         System.out.println("this.getName() = " + this.getName());
-        System.out.println("Demo1---end");
+        System.out.println("HasSelfPrivateNum---end");
     }
 
     @Override
