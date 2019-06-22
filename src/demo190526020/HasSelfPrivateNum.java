@@ -11,7 +11,7 @@ package demo190526020;
 public class HasSelfPrivateNum {
     private String str = "a";
 
-    public void addI(String userName){
+    synchronized public void addI(String userName){
         try{
             int num = 0;
             if (str.equals(userName)) {
