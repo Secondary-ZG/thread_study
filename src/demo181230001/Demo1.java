@@ -9,8 +9,8 @@ package demo181230001;
 public class Demo1 {
 
     /**
-     * 1、在控制台中输出的main其实就是一个名称叫做main的线程在执行mian()方法中的代码
-     * 2、并且控制台输出的mian和main方法没有任何关系，仅仅是名称相同而已
+     * 1、在控制台中输出的main其实就是一个名称叫做main的线程在执行main()方法中的代码
+     * 2、并且控制台输出的main和main方法没有任何关系，仅仅是名称相同而已
      *
      * @param args
      */
